@@ -1,0 +1,97 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+script.    
+    (function(window, document, $){
+
+    })(window, document, jQuery);
+
+    $(document).ready(function(){
+        document.addEventListener('swup:contentReplaced', function(event) {
+            console.log('event',event);
+            // do something when content is replaced
+        });
+        
+        // HAMBURGER
+        $('#toggle').click(function() {
+            $(this).toggleClass('active');
+            $('.head-container').toggleClass('ab-fixed');
+            $('#menu-overlay').toggleClass('open');
+            $('.logo').toggleClass('white-svg');
+            $('html').toggleClass('overflow-hidden');
+            $('.head-container').toggleClass('bg-gone');
+        });
+        $('#main-header').find('.overlay a').click(function() {
+            $('#toggle').toggleClass('active');
+            $('#menu-overlay').removeClass('open');
+            $('.logo').toggleClass('white-svg');
+            $('html').toggleClass('hide-scroll');
+            $('.head-container').toggleClass('bg-gone');
+
+        });
+        // scroll
+       // $(document).scroll(function () {
+        //    var $nav = $(".head-container");
+         //   $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      //  });
+        
+        // ACTIVE FUNCTION IN HAMBURGER
+
+        var myTimeOut = "";
+
+        function setActive() {
+            
+            var current =   location.pathname.slice(1);
+            // console.log(current)
+            $('nav ul li a').each(function(){
+                var $this = $(this);
+                // console.log($this)
+                // if the current path is like this link, make it active
+                if(current !== "" && $this.prop('href').indexOf(current) !== -1) {
+                    // return false;
+                    $this.addClass('active-link');
+              
+                }
+            })
+        }
+
+        function resetActive(){
+            setActive();
+        }
+
+        $("nav ul li a").on("mouseenter", function(){
+            $(this).closest('.menu').find('li a').removeClass("active-link");
+            $(this).addClass("active-link");
+            if (myTimeOut != ""){
+                clearTimeout(myTimeOut);
+            }
+
+        });
+        $("nav ul li a").on("mouseleave", function(){
+            $(this).closest('.menu').find('li a').removeClass("active-link");
+            $(this).removeClass("active-link");
+            myTimeOut = setTimeout(resetActive, 500);
+        
+        });
+
+        setActive();
+    });
+    
+    window.onload = function(){
+        try {
+            if(localStorage.getItem("cookie-enable")!="1"){
+                document.getElementById("cookie-bar").style.display="block";
+            }
+            document.getElementById("save-cookie-example").addEventListener( "click", function() {
+                localStorage.setItem("cookie-enable", "1");
+                document.getElementById("cookie-bar").style.display="none";
+            } );
+        } catch( e ) {
+            return false;
+        }
+    }
+script.
+    AOS.init();
+

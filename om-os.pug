@@ -1,0 +1,765 @@
+include includes/header-top.pug
+
+<title>Nordlid | Om os</title>
+
+<meta property="og:title" content="Nordlid | Om os">
+<meta property="og:url" content="om-os.html">
+
+<meta name="twitter:title" content="Nordlid | Om os">
+
+include includes/header-bottom.pug
+
+<main>
+    <!-- HALF TITLE SECTION -->
+    <section class="om-os-bg half-title-section bg-dark-blue p-4 py-5 p-md-5 om-os-hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="col-height d-flex align-items-center justify-content-center">
+                        <div class=" pt-5 mt-5 px-1 hero-text text-center">
+                            <h1 class="display-4 ">Hos Nordlid tror vi på, at gode relationer skaber gode resultater</h1>
+                            <!-- <p class="mt-4 mb-0">Vi er flere end 50 dedikerede specialister, der hver eneste dag inspirerer til forandring og skaber resultater for vores kunder ved at bygge stærke relationer mellem mennesker og brands.</p>
+                            <p class="mb-0">Vi hjælper med at definere vores kunders løfte, og beviser det gennem integrerede kundeoplevelser.</p> -->
+                            <!-- <p>Vi hjælper med at definere jeres løfte og beviser det gennem integrerede kundeoplevelser.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white text-secondary p-lg-5 py-5 fibia-hjalp">
+        <div class="container-fluid py-lg-4 ">
+            <div class="row">
+                <div class="col-xl-8 d-flex align-items-center">
+                    <div>
+                        <h1 class="display-4">En stærk organisation<br class="d-none d-md-block"> – bygget på en god relation</h1>
+                        <p class="mt-4">Nordlid betyder ’det nordiske team’. Nordlid opstod i 2017 ved en fusion mellem det prisvindende Dialog- og Direct Marketing bureau RelationshusetGekko og Skandinaviens mest erfarne Marketing Automation bureau Increase. To bureauer der allerede havde knyttet en stærk relation i samarbejdet med en fælles kunde. Nordlid er en del af Bording-gruppen, der har over 400 ansatte i Skandinavien. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION INFO -->
+    <section id="location-info" class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 py-4 p-lg-5 bg-dark-blue left-box">
+                    <div class="p-2 p-lg-0 pb-md-5 kontakt-info ">
+                        <h1 class="my-md-4 mt-0 display-4">En god relation starter med en god snak</h1>
+                        <p class="mb-4">Vi vil gerne skabe resultater sammen med dig. Men det kræver, at vi lærer hinanden at kende – for “hvem fanden er Nordlid?” Og endnu vigtigere: Hvem er du? Og hvordan kan vi hjælpe dig?</p>
+                        <p class="mb-4">Skriv gerne et par stikord om din virksomhed og dine udfordringer i Besked-feltet, så det er det helt rigtige Nordlid-menneske, der tager fat i dig. Du kan også bare ringe eller sende en mail. Vi glæder os til at tale med dig.</p>
+                    
+                        <a href="tel:+4531100095" class="inherit"><i class="fas fa-phone pr-2"></i>+45 31 10 00 95</a> <br>
+                        <a href="mailto:welcome@nordlid.com" class="inherit"><i class="fas fa-envelope pr-2"></i>welcome@nordlid.com</a>
+                    </div>
+
+                    <div class="p-2 p-lg-0 mt-3 mt-md-5 pb-md-5">
+                        <!-- <h1 class="">Kontakt form</h1> -->
+                        <form id="contact-form" name="contact-form" action="https://s2331.t.eloqua.com/e/f2" method="POST" class="needs-validation" novalidate>
+                            <div class="form-wrapper fade-on-complete">  
+                            </div>
+                            <input type="hidden" name="elqFormName" value="2019-04-12-nordlid-kontakt">
+                            <input type="hidden" name="elqSiteID" value="2331">
+                            <!-- <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <label for="name" class="">Navn*</label>
+                            </div> -->
+                            <div class="md-form pb-2 ">
+                                <input type="email" id="email" name="emailAddress" class="form-control" required>
+                                <label for="email" class="">Email*</label>
+                                <div class="valid-feedback"><i class="fas fa-check mr-2"></i>Perfekt</div>
+                                <div class="invalid-feedback"><i class="fas fa-exclamation-circle mr-2"></i>example@email.com</div>
+                            </div>
+                            <div class="md-form pb-2">
+                                <input type="text" id="subject" name="singleLineText" class="form-control" required>
+                                <label for="subject" class="">Emne*</label>
+                            </div>
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="paragraphText" rows="2" class="form-control md-textarea" required></textarea>
+                                <label for="message">Besked</label>
+                            </div>
+
+                            <input type="hidden" name="elqCustomerGUID" value="">
+                            <input type="hidden" name="elqCookieWrite" value="0">
+                            <div class="button-confirmation-wrapper d-flex align-items-center">
+                                <div class="text-center text-md-left ">
+                                    <button id="btn-wrapper" class="btn btn-primary z-depth-1 btn-lg m-0 tilmeld-btn mt-4" ><span id="contact-btn">Send</span><span class="btn-load-d-none" id="contact-load"><i class="fas fa-spinner fa-spin mr-2 fa-lg"></i>LIGE 2 SEKUNDER</span></button>
+                                </div>
+                                <div class="ajax-confirmation">
+                                    <p class="text-white  mt-4 pt-3 pl-4 ml-3"><i class="fas fa-smile-beam pr-2"></i>Besked sent!</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-0 right-box">
+                    <!-- -depth-1-half map-container"d="map-container-google-1" -->
+                    <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EiNJc2xhbmRzIEJyeWdnZSwgS8O4YmVuaGF2biwgRGVubWFyayIuKiwKFAoSCbWtYNpoU1JGEXjedE1ZOcs2EhQKEglRQwhdWlNSRhHIPZtxc_LiLw&key=AIzaSyBOSpXN7XMemgbFm4P4WkA5UOoog65FbVI" allowfullscreen></iframe> -->
+                    <a href="https://www.google.dk/maps/place/Nordlid/@55.6641448,12.5712571,17z/data=!3m1!4b1!4m5!3m4!1s0x465252fb4b7433e7:0x5c4457d2550987a!8m2!3d55.6641448!4d12.5734458" target="_blank">
+                        <div class="map-location" >
+                        </div>
+                    </a>
+                    <div id="parking-info" class="parking-info p-4 p-lg-4  text-secondary bg-white">
+                        <div class="p-lg-4">
+                            <h1 class=" mb-3 display-4">Når du skal <br class="d-sm-none d-lg-block"> parkere hos os</h1>
+                            <p>Nordlid har 6 gæstepladser i gården (indkørsel fra Sturlasgade eller Islands Brygge). Holder du på én af de pladser, skal du registrere dig i receptionen i stuen på Islands Brygge 43.  </p> 
+                            <p>P-pladsen er gratis og gælder i 3 timer. Du kan også få kort til en hel dags parkering i Nordlids reception på 4. sal. Eller vi kan sende dig en P-billet på forhånd. </p> 
+                            <p class="m-0">Hvis pladserne er optaget, kan du parkere på gaden i nærheden af Islands Brygge 43. Parkeringszonen hedder BLÅ / 3300. Pris for hverdage er 11 kr. pr. time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SORT -->
+    <!-- <section class="mx-md-5 mx-4 mb-2 pb-2" id="sort">
+        <h1 class="px-2 pb-3 pt-4 text-md-center mb-4 mt-md-5 text-secondary display-4 text-left">Vores medarbejder</h1>
+        <div class="d-flex flex-wrap justify-content-around">
+            <button class="sort-item bg-orange waves-light" onclick="filterSelection('all')" >Alle</button>
+            <button class="sort-item waves-light" onclick="filterSelection('adminstration')">Adminstration</button>
+            <button class="sort-item waves-light" onclick="filterSelection('csm')">CSM</button>
+            <button class="sort-item waves-light" onclick="filterSelection('tech')">Tech</button>
+            <button class="sort-item waves-light" onclick="filterSelection('it-afdeling')">IT</button>
+            <button class="sort-item waves-light" onclick="filterSelection('kreative')">Kreative</button>
+            <button class="sort-item waves-light" onclick="filterSelection('strategi')">Strategi</button>
+            <button class="sort-item waves-light" onclick="filterSelection('kontakt-afdeling')">Kontaktafdeling</button>
+        </div>
+    </section> -->
+    <!-- <section class="mx-0 mx-md-5">
+        <div class="container-fluid">
+            <div class="row" id="sort">
+                <div class="d-flex flex-wrap">
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item bg-orange waves-light" onclick="filterSelection('all')" >Alle</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('adminstration')">Adminstration</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('csm')">CSM</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('tech')">Tech</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('it-afdeling')">IT</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('kreative')">Kreative</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('strategi')">Strategi</button>
+                    <button class="col-6 col-md-4 col-lg-1 d-flex align-items-center justify-content-center sort-item waves-light" onclick="filterSelection('kontakt-afdeling')">Kontakt afdeling</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- TILE SECTION -->
+    <!-- <section id="tile-section" class="d-flex flex-wrap mx-0 mx-md-5  mb-5">
+        <div class="tile-container adminstration bg-blue p-3 girl d-flex align-items-start flex-column">
+            
+            ADMINSTRATION
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Bente Jørgensen</h5>
+                    <h5 class="font-weight-bold">Finance Manager</h5>
+                    <a href="mailto:bjo@nordlid.com">bjo@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container adminstration bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Helle Kongsgaard Søborg</h5>
+                    <h5 class="font-weight-bold">HR Manager & Controller</h5>
+                    <a href="mailto:hks@nordlid.com">hks@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container adminstration bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Isabel Carentius</h5>
+                    <h5 class="font-weight-bold">Receptionist and Hostess</h5>
+                    <a href="mailto:ica@nordlid.com">ica@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        CSM
+        <div class="tile-container csm bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class=" tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Ditte Kofoed Nielsen</h5>
+                    <h5 class="font-weight-bold">Customer Success Manager</h5>
+                    <a href="mailto:dkn@nordlid.com">dkn@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container csm bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Simon Geoffroy</h5>
+                    <h5 class="font-weight-bold">Customer Success Manager</h5>
+                    <a href="mailto:sig@nordlid.com">sig@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container csm bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Victor Green<h5>
+                    <h5 class="font-weight-bold">Customer Success Manager</h5>
+                    <a href="mailto:vgr@nordlid.com">vgr@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container csm bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Sonja Halse</h5>
+                    <h5 class="font-weight-bold">Customer Success Manager</h5>
+                    <a href="mailto:sha@nordlid.com">sha@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container csm bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Neringa Müller</h5>
+                    <h5 class="font-weight-bold">Customer Success Manager</h5>
+                    <a href="mailto:sha@nordlid.com">nmu@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        TECH
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Alexander Stojanovic</h5>
+                    <h5 class="font-weight-bold">Head of Technology</h5>
+                    <a href="mailto:als@nordlid.com">als@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Simon Andersen</h5>
+                    <h5 class="font-weight-bold">Scrum Master & Developer</h5>
+                    <a href="mailto:san@nordlid.com">san@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Anders Larsen</h5>
+                    <h5 class="font-weight-bold">Developer</h5>
+                    <a href="mailto:ala@nordlid.com">ala@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Dragan Dimitrijevic</h5>
+                    <h5 class="font-weight-bold">Head of Product</h5>
+                    <a href="mailto:ddi@nordlid.com">ddi@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Claus Christensen</h5>
+                    <h5 class="font-weight-bold">Integration Specialist</h5>
+                    <a href="mailto:cch@nordlid.com">cch@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Sheila Jakobsen Hansen</h5>
+                    <h5 class="font-weight-bold">Campaign Specialist</h5>
+                    <a href="mailto:sjh@nordlid.com">sjh@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Thomas Kristian Worm</h5>
+                    <h5 class="font-weight-bold">CRM Consultant</h5>
+                    <a href="mailto:tkw@norlid.com">tkw@norlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Patrick S. Gehrs</h5>
+                    <h5 class="font-weight-bold">First Level Support</h5>
+                    <a href="mailto:pge@nordlid.com">pge@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Bjartur Kristjánsson</h5>
+                    <h5 class="font-weight-bold">Front End Dev & UX Desinger</h5>
+                    <a href="mailto:bjk@nordlid.com">bjk@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container tech bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Sophia Svane</h5>
+                    <h5 class="font-weight-bold">Campaign Specialist Trainee</h5>
+                    <a href="mailto:bjk@nordlid.com">ssv@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        IT
+        <div class="tile-container it-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Aleksandar Kitanovski</h5>
+                    <h5 class="font-weight-bold">DevOps Architect</h5>
+                    <a href="mailto:aki@nordlid.com">aki@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container it-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Anders Mark Christensen</h5>
+                    <h5 class="font-weight-bold">IT Support and Security</h5>
+                    <a href="mailto:amc@nordlid.com">amc@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        KREATIVE
+        <div class="tile-container kreative bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Jesper Isholm</h5>
+                    <h5 class="font-weight-bold">Creative Director</h5>
+                    <a href="mailto:jei@nordlid.com">jei@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kreative bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Thomas Birk Christoffersen </h5>
+                    <h5 class="font-weight-bold">Senior Art Director</h5>
+                    <a href="mailto:tbc@nordlid.com">tbc@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kreative bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Pernille Maria Nygaard-Jesnen</h5>
+                    <h5 class="font-weight-bold">Concept & Copywriter</h5>
+                    <a href="mailto:pen@nordlid.com">pen@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kreative bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Mikkel Bording</h5>
+                    <h5 class="font-weight-bold">Senior Copywriter</h5>
+                    <a href="mailto:mbo@nordlid.com">mbo@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kreative bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Anne Ingevold</h5>
+                    <h5 class="font-weight-bold">Copywriter</h5>
+                    <a href="mailto:ain@nordlid.com">ain@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        STRATEGI
+        <div class="tile-container strategi bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Jan Køhler </h5>
+                    <h5 class="font-weight-bold">Director of Strategy, Creativity and Innovation</h5>
+                    <a href="mailto:jak@nordlid.com">jak@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container strategi bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Christine Clausen</h5>
+                    <h5 class="font-weight-bold">Head of Strategy</h5>
+                    <a href="mailto:chc@nordlid.com">chc@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container strategi bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Mads Stenbjerre </h5>
+                    <h5 class="font-weight-bold">Head of Analytics & <br>Business Intelligence</h5>
+                    <a href="mailto:mas@nordlid.com">mas@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container strategi bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Helle Windahl</h5>
+                    <h5 class="font-weight-bold">Senior Creative Strategist</h5>
+                    <a href="mailto:hew@nordlid.com">hew@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        Kontakt afdeling
+        <div class="tile-container kontakt-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Lasse N. Christensen</h5>
+                    <h5 class="font-weight-bold">CEO</h5>
+                    <a href="mailto:lnc@nordlid.com">lnc@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Lotte Kjelgaard</h5>
+                    <h5 class="font-weight-bold">Personal Assistant to  <br> Lasse N. Christensen</h5>
+                    <a href="mailto:llk@nordlid.com">llk@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Andreas Hansen</h5>
+                    <h5 class="font-weight-bold">Commercial Director</h5>
+                    <a href="mailto:aha@nordlid.com">aha@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Henrik Carentius</h5>
+                    <h5 class="font-weight-bold">Director</h5>
+                    <a href="mailto:hca@nordlid.com">hca@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Peter Franch</h5>
+                    <h5 class="font-weight-bold">Strategic Client Director</h5>
+                    <a href="mailto:paf@nordlid.com">paf@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 man d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Anders Holvøe</h5>
+                    <h5 class="font-weight-bold">Strategic Client Director</h5>
+                    <a href="mailto:abg@nordlid.com">abg@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Ilse Søgaard</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:ils@nordlid.com">ils@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Tina Agerlin</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:tia@nordlid.com">tia@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Anya Neubert</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:ann@nordlid.com">ann@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Helle Stausholm</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:hes@nordlid.com">hes@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Emilie Tornhøj</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:eto@nordlid.com">eto@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Maria Rosenbæk</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:mar@nordlid.com">mar@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Majken Holmsteen</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:mho@nordlid.com">mho@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Lisa Neimann</h5>
+                    <h5 class="font-weight-bold">Senior Project Manager</h5>
+                    <a href="mailto:lns@nordlid.com">lns@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling bg-blue p-3 girl d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Sofie Søgaard </h5>
+                    <h5 class="font-weight-bold">Junior Project Manager</h5>
+                    <a href="mailto:sks@nordlid.com">sks@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tile-container kontakt-afdeling it-afdeling strategi tech adminstration kreative csm  bg-orange p-3 animal d-flex align-items-start flex-column">
+            <div class="tile-content-container">
+                <p>"En glad person som elsker automation marketing"</p> 
+            </div>
+            <div class="mt-auto tile-content-container">
+                <div class="tile-content">
+                    <h5>Dig?</h5>
+                    <h5 class="font-weight-bold">Altid velkommen at <br> sende uopfordret ansøgning til</h5>
+                    <a href="mailto:hks@nordlid.com">hks@nordlid.com</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+
+</main>
+
+include includes/footer.pug
+
+include js/js.pug
+
+include js/sort-script.pug
+
+include js/form-validate-om-os.pug
+
+
+
+</body>
+
+</html>

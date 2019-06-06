@@ -1,0 +1,41 @@
+<!-- GSAP LINKS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/TextPlugin.min.js"></script>
+
+<!-- LAXXX SCROLL LINKS -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+script. 
+
+
+    var tl = new TimelineLite({
+        paused:true
+    });
+
+    tl.from('.img-gone', 0.10, {opacity: 1, marginTop:0, ease: Power1.easeOut })
+        .to('.img-gone', 0.10, {opacity: 0, marginTop:20, ease: Power1.easeOut })
+        .from('.case-text', 0.15, {opacity: 0, marginTop:20, ease: Power1.easeOut })
+        .to('.case-text', 0.15, {opacity: 1, marginTop:0, ease: Power1.easeOut })
+
+    $("#dsb").hover(function(){
+
+        tl.play();
+
+    }, function(){
+       
+         tl.reverse();
+       
+    });
+
+    $("#lotto-case").hover(function(){
+
+        tl.play();
+
+    }, function(){
+       
+         tl.reverse();
+       
+    });

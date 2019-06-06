@@ -1,0 +1,39 @@
+// script.
+//     $(document).ready(function(){
+//         $('.svg-menu__path__seleccion').on("mouseover", function(e){    
+//             if ($(this).hasClass('active')){
+//                 $('.active').removeClass('active');
+                
+//             } else {
+//                 $('.active').removeClass('active');
+//                 $(this).addClass('active');
+//             }
+//         });
+//     });
+script.
+    $(document).ready(function(){
+        $('.svg-menu__path__seleccion').on("mouseover", function(e){    
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+            
+        });
+    });
+    $(document).ready(function(){
+        $('.svg-menu__path__seleccion').on("mouseleave", function(e){    
+            // $('.active').removeClass('active');
+            $(this).removeClass('active');
+            
+        });
+    });
+// script.
+//     $(document).ready(function(){
+//         $('.svg-menu__path__seleccion').on("click", function(e){    
+//             if ($(this).hasClass('active')){
+//                 $('.active').removeClass('active');
+                
+//             } else {
+//                 $('.active').removeClass('active');
+//                 $(this).addClass('active');
+//             }
+//         });
+//     });

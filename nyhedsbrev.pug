@@ -1,0 +1,97 @@
+include includes/header-top.pug
+
+<title>Nordlid | Nyhedsbrev - Bliv inspireret</title>
+
+<meta property="og:title" content="Nordlid | Nyhedsbrev - Bliv inspireret">
+<meta property="og:url" content="nyhedsbrev.html">
+
+<meta name="twitter:title" content="Nordlid | Nyhedsbrev - Bliv inspireret">
+
+include includes/header-bottom.pug
+
+
+<main>
+    <!-- Karriere hos Nordlid -->
+    <section id="nyhedsbrev-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 py-4 p-lg-0 bg-dark-blue d-flex align-items-center nyhedsbrev-content">
+                    <div class="p-2 py-5 mt-5 mt-xl-0 p-lg-5 mx-lg-3">
+                        
+                        <form action="https://s2331.t.eloqua.com/e/f2" class="needs-validation" novalidate >
+                            <div class="form-wrapper fade-on-complete">
+                                <h1 class="display-4 mt-0 mt-md-5 pt-0 pt-md-5 heading-newsletter"><i class="fas fa-brainpr-4"></i>Skal vi inspirere dig?</h1>
+                                <p class="mb-5 sub-text">Hvis du giver os lov, vil vi meget gerne inspirere dig – fx via vores nyhedsbreve. Her får du relevante artikler og adgang til vores blogindlæg med trends, tendenser og interessante cases om bl.a. forretningsstrategi, kreativ kommunikation, kundeoplevelser, digitale løsninger, marketingteknologier og meget mere. Du vil selvfølgelig også blive inviteret, når vi holder inspirerende eller indsigtsgivende webinarer eller events.</p>                        
+                                <input type="hidden" name="elqFormName" value="20-03-2017-nordlid-signup-newsletter">
+                                <input type="hidden" name="elqSiteID" value="2331">
+                                    
+                                <!-- NAME -->
+                                <div class="md-form pb-1">
+                                    <input type="text" id="name" class="form-control" name="firstName" required>
+                                    <label for="name" class="">Navn *</label>
+                                    <div class="invalid-feedback">
+                                        <p><i class="fas fa-exclamation-circle  "></i> påkrævet*</p>
+                                    </div>
+                                </div>
+                                <!-- VIRKSOMHED -->
+                                <div class="md-form pb-1">
+                                        <input type="text" id="virksomhed" name="company" class="form-control" required>
+                                        <label for="virksomhed" class="">Virksomhed *</label>
+                                        <div class="invalid-feedback">
+                                            <p><i class="fas fa-exclamation-circle  "></i> påkrævet*</p>
+                                        </div>
+                                </div>
+                                <!-- EMAIL -->
+                                <div class="md-form">
+                                    <input type="email" id="email" name="emailAddress" class="form-control" required>
+                                    <label for="email">E-mail *</label>
+                                    <div class="invalid-feedback">
+                                        <p><i class="fas fa-exclamation-circle"></i> mail@eksempel.com</p>
+                                    </div>
+                                </div>
+                                <!-- Default unchecked -->
+                                <div class="custom-control custom-checkbox mb-4">
+                                    <input type="checkbox" class="custom-control-input" name="permission" id="defaultUnchecked" required>
+                                    <label class="custom-control-label small-lh" for="defaultUnchecked">
+                                        <small>Jeg vil gerne modtage markedsføring fra Nordlid. Nordlid må gerne kontakte mig via brev, telefon og elektronisk post (herunder sms og e-mail) med invitationer til bl.a. webinarer, events og nyheds-breve. Jeg kan til enhver tid fortryde min tilmelding.*</small>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        <p><i class="fas fa-exclamation-circle  "></i> påkrævet*</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center text-md-left d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
+                                    <button id="btn-wrapper2" class="btn-submit-form btn btn-orange z-depth-0 btn-lg m-0 tilmeld-btn fill" ><span id="contact-btn2" >Tilmeld nyhedsbrev</span><span class="btn-load-d-none" id="contact-load2"><i class="fas fa-spinner fa-spin mr-2 fa-lg"></i>Lige 2 sekunder</span></button>
+                                    <!-- <a href="" class="ml-md-5 mt-4 mt-md-0 text-white"><i class="fas fa-file-pdf pr-2"></i>Eksempel</a> -->
+                                </div>
+                                <input type="hidden" name="elqCustomerGUID" value="">
+                                <input type="hidden" name="elqCookieWrite" value="0">
+                            </div>
+                            <div class="ajax-confirmation">
+                                <h1 class="display-4 mt-0 mt-md-5 pt-0 pt-md-5 heading-newsletter"><i class="fas fa-brainpr-4"></i>Succes! <i class="fas fa-check text-primary"></i></h1>
+                                <h3 class="mb-4">DU ER NU TILMELDT NYHEDSBREVET</h3>
+                                <p>Med Moments vil du modtage spændende og relevante artikler og business cases inden for bl.a. Content, Marketing Automation, Organisation og Customer Experience strategier. Du vil også få invitationer til vores populære events og webinarer. </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 p-0 bg-blue karriere-img">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+include includes/footer.pug
+
+include js/js.pug
+
+<!-- include js/form.pug -->
+include js/form-validate-nyhedsbrev.pug
+
+
+</body>
+
+</html>

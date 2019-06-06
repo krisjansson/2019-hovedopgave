@@ -1,0 +1,57 @@
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+              // console.log(form.checkValidity)
+              event.preventDefault();
+              event.stopPropagation();
+              
+          } else {
+              event.preventDefault();
+              event.stopPropagation();
+  
+              // $this = $(event.currentTarget);
+              var $form = $(event.currentTarget);
+              var btnWrapper = document.getElementById("btn-wrapper2");
+              var btnOriginal = document.getElementById("contact-btn2");
+              var btnLoad = document.getElementById("contact-load2");
+  
+              btnWrapper.classList.add("btn-load");
+              btnWrapper.setAttribute("disabled", "");
+              btnOriginal.classList.add("btn-load-d-none");
+              btnLoad.classList.remove("btn-load-d-none");
+  
+              $.ajax({
+                  method: "POST",
+                  url: $form.prop('action'),
+                  data: $form.serializeArray()
+              })
+              .always(function(msg) {
+                  btnWrapper.classList.remove("btn-load");
+                  btnWrapper.removeAttribute("disabled", "");
+                  btnOriginal.classList.remove("btn-load-d-none");
+                  btnLoad.classList.add("btn-load-d-none");
+  
+                  $form.find(".form-wrapper").fadeOut( 300, function() {
+                      $form.find('.ajax-confirmation').fadeIn(300);
+                      $form.find("input[type=text], textarea").val("");
+                  });
+              });
+          }
+          form.classList.add('was-validated');
+  
+  
+         
+      }, false);
+      });
+  }, false);
+  })();
+</script>

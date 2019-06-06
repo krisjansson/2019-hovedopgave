@@ -1,0 +1,55 @@
+script.
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                // console.log(form.checkValidity)
+                event.preventDefault();
+                event.stopPropagation();
+                
+            } else {
+                event.preventDefault();
+                event.stopPropagation();
+
+                // $this = $(event.currentTarget);
+                var $form = $(event.currentTarget);
+                var btnWrapper2 = document.getElementById("btn-wrapper2");
+                var btnOriginal2 = document.getElementById("contact-btn2");
+                var btnLoad2 = document.getElementById("contact-load2");
+
+                btnWrapper2.classList.add("btn-load");
+                btnWrapper2.setAttribute("disabled", "");
+                btnOriginal2.classList.add("btn-load-d-none");
+                btnLoad2.classList.remove("btn-load-d-none");
+
+                $.ajax({
+                    method: "POST",
+                    url: $form.prop('action'),
+                    data: $form.serializeArray()
+                })
+                .always(function(msg) {
+                    btnWrapper2.classList.remove("btn-load");
+                    btnWrapper2.removeAttribute("disabled", "");
+                    btnOriginal2.classList.remove("btn-load-d-none");
+                    btnLoad2.classList.add("btn-load-d-none");
+
+                    $form.find(".form-wrapper").fadeOut( 300, function() {
+                        $form.find('.ajax-confirmation').fadeIn(300);
+                        $form.find("input[type=text], textarea").val("");
+                    });
+                });
+            }
+            form.classList.add('was-validated');
+
+
+           
+        }, false);
+        });
+    }, false);
+    })();

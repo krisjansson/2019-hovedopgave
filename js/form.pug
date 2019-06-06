@@ -1,0 +1,17 @@
+script.
+    $('.btn-submit-form').on('click', function(e){
+        e.preventDefault();
+        $this = $(e.currentTarget);
+        $form = $this.closest('form');
+        console.log($form.serializeArray())
+        $.ajax({
+            method: "POST",
+            url: $form.attr('action'),
+            data: $form.serializeArray()
+        })
+        .always(function(msg) {
+            $form.find(".form-wrapper").fadeOut( 300, function() {
+                $form.find('.ajax-confirmation').fadeIn(300);
+            });
+        });
+    });
