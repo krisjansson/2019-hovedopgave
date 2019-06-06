@@ -1,0 +1,81 @@
+.duo-section {
+    // border-bottom: 10px solid white;
+    // min-height: 160vh;
+    @include media-breakpoint-up(md) {
+        min-height: 50vh;
+        }
+    .square {
+        min-height: 50vh;
+        width: 100%;
+        transition: all 1s ease;
+        background-size: cover;
+        // @include media-breakpoint-up(xl) {
+        // background-size: 200%;
+        // }
+        // background-size: cover;
+        position: relative;
+        z-index: 10;
+        background-position: center center;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+    
+        }
+        h2,h3 {
+            position: relative;    
+                
+            &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: $color-hover;
+            transition: .35s;
+            }
+        }
+
+    @include media-breakpoint-up(lg) {
+        width: 50%;
+        min-height: 60vh;
+        }
+     .square-content {
+         max-width: 500px;
+         z-index: 11;
+        //  p {
+        //      display: none;
+        //      @include media-breakpoint-up(lg) {
+        //              display: block;
+        //      }
+        //      @include media-breakpoint-down(md) {
+        //              display: block;
+        //      }
+        //  }
+     }   
+     
+    
+    .square-left {
+        border-top: 10px solid white;
+        border-right: 0px solid white;
+        @include media-breakpoint-up(lg) {
+            border-top: 10px solid white;
+            border-right: 5px solid white;
+            }
+    
+    }
+    .square-right {
+        border-top: 10px solid white;
+        border-left: 0px solid white;
+        @include media-breakpoint-up(lg) {
+            border-top: 10px solid white;
+            border-left: 5px solid white;
+            }
+    }
+    .square-full {
+        border-top: 10px solid white;
+    }
+}
+
+.categorie-round {
+    border-radius: 25px;
+}

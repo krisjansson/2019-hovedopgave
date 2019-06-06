@@ -1,0 +1,74 @@
+#nyhedsbrev-container {
+
+    .nyhedsbrev-content {
+        min-height: 100vh;
+        .heading-newsletter {
+            margin-left: -2px;
+        }
+            @include media-breakpoint-down(md) {
+                min-height: 100vh
+            }
+    }
+    .karriere-img {
+        // height: 50vh;
+        background-image: 
+        // linear-gradient(
+        //     rgba(35,74,86, 0.45), 
+        //     rgba(35,74,86, 0.45)
+        //   ),
+        /* bottom, image */
+        url(../assets/img/idea-web-safe.jpg);
+        background-position: left center;
+        background-size: cover;
+        // transform: scaleX(-1);
+        @include media-breakpoint-down(md) {
+            height: 50vh;
+        }
+    }
+    .sub-text {
+        @include media-breakpoint-up(lg) {
+            max-width: 700px;
+        }
+    }
+    form {
+        @include media-breakpoint-up(lg) {
+            max-width: 700px;
+        }
+        
+    }
+    .md-form label {
+        color: #fff; 
+        &.active {
+          color: #fff !important; 
+        }
+    }
+    .md-form input[type=text]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]), .md-form input[type=email]:focus:not([readonly]) {
+        border-bottom: 1px solid $orange !important;
+        box-shadow: 0 1px 0 0 $orange !important; 
+    }
+    .tilmeld-btn {
+        font-weight: 400 !important;
+        letter-spacing: 1px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    .custom-control-label {
+        small {
+
+            font-weight: 300 !important;
+        }
+        
+    }
+    .md-form {
+        input[type=text], input[type=email] {
+            color: #fff !important;
+        }
+    }
+}
+.nyhedsbrev-bg {
+    background: url(../assets/img/idea-web-safe.jpg);
+    background-size: cover;
+    background-position: 0;
+}

@@ -1,0 +1,73 @@
+.om-os-hero {
+    background: url(../assets/img/TOPGRAFIK-OM-OS-GettyImages-183060490.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-size .5s;
+    transition: all 1s ease;
+    background-position: center center;
+    background-size: cover;
+    
+    // &:after {
+    //     position: absolute;
+    //     content:"";
+    //     top:0;
+    //     left:0;
+    //     width:100%;
+    //     height:100%;
+    //     opacity:.2;
+    //     z-index: 10;
+    //     background-color: $dark-blue;
+    // }
+
+    .hero-text {
+        z-index: 11;
+        max-width: 700px;
+    }
+}
+#contact-form {
+    form {
+        max-width: 700px;
+    }
+    .md-form label {
+        color: #fff; 
+        &.active {
+          color: #fff !important; 
+        }
+    }
+    .md-form input[type=text]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]), .md-form input[type=email]:focus:not([readonly]), .md-form textarea[type=text]:focus:not([readonly]) {
+        border-bottom: 1px solid $orange !important;
+        box-shadow: 0 1px 0 0 $orange !important; 
+    }
+    .tilmeld-btn {
+        font-weight: 400 !important;
+        letter-spacing: 1px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    .custom-control-label {
+        small {
+            font-weight: 300 !important;
+        }
+        
+    }
+    .md-form {
+        input[type=text], input[type=email], textarea[type=text] {
+            color: #fff !important;
+        }
+    }
+    
+}
+.bg-om-os {
+    background: url(https://www.nordlid.com/assets/img/NY-TOPGRAFIK-OM-OS-GettyImages-183060490.jpg);
+}
+
+.btn-load-d-none {
+    display: none;
+}
+.btn-load {
+    background-color: #CC5803 !important;
+    border-color: #CC5803 !important;
+    color: rgba(255,255,255,0.8) !important;
+}

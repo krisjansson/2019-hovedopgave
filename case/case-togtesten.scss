@@ -1,0 +1,40 @@
+.togtesten-hero {
+    background: url(../assets/img/togtesten/DSB-Togtesten_topgrafik2-Blaa.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+    transition: background-size .5s;
+    transition: all 1s ease;
+    background-position: center center;
+    background-size: cover;
+    background-color: $blue;
+    &:after {
+        position: absolute;
+        content:"";
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity:0;
+        z-index: 10;
+        background-color: $dark-blue;
+    }
+    img {
+        z-index: 11;
+    }
+}
+.togtesten-bg {
+    background: url(../assets/img/togtesten/DSB_TogTesten_DM-brev-og-folder_1.png);
+    background-size: 50% !important;
+}
+.bg-togtesten {
+    background: url(../assets/img/togtesten/DSB-Togtesten_topgrafik2-Blaa.jpg);
+    background-size: cover !important;
+}
+
+@include media-breakpoint-down(xs) {
+    .fa-long-arrow-alt-right  {
+        transform: rotate(90deg);
+    }
+}

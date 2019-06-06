@@ -1,0 +1,9 @@
+.transition-fade {
+    transition: .5s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    transition-delay: .5s;
+    opacity: 0;
+    transform: translateY(-20vh);
+}

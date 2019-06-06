@@ -1,0 +1,47 @@
+.sort-item {
+    position: relative;
+    height: 60px;
+    border: none;
+    color: $dark-blue;
+    background: #fff;
+    transition: all .5s ease;
+    // font-weight: bold;
+    // font-size: 1.25rem;
+    width: 11% !important;
+    // margin: 10px;
+    border-radius: 35px;
+    
+
+    @include media-breakpoint-down(lg) {
+        width: 24% !important;
+    }
+    @include media-breakpoint-down(md) {
+        width: 24% !important;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 32% !important;
+    }
+    @include media-breakpoint-down(xs) {
+        width: 49% !important;
+    }
+    &:focus {
+        outline: none;
+        background-color: $orange !important;
+    }
+    &:hover {
+        cursor: pointer;
+        color:#ffffff;
+        background-color: $orange !important;
+    }
+
+}
+button.bg-orange:focus {
+    background-color: $orange !important;    
+}
+#sort {
+    .bg-orange {
+        transition: all .5s ease;
+        z-index: 2;
+        // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important
+    }
+}

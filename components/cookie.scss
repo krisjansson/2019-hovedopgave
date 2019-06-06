@@ -1,0 +1,33 @@
+#cookie-bar.fixed {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+#cookie-bar {
+    // height: 100px;
+    // line-height: 24px;
+    color: #eeeeee;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    color: white;
+    background-color: $dark-blue;
+    display:none;
+}
+
+.cb-enable {
+    border-radius: 10%;
+    margin-left: 100px;
+    color: white;
+    padding: 5px;   
+    border-radius: 10%;
+    text-decoration: none;
+    transition: .3s background-color;
+ }
+
+.cb-enable:hover {
+    background-color: darkcyan;
+}

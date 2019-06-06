@@ -1,0 +1,42 @@
+.half-title-section {
+    // min-height: 85vh;
+    background-repeat: no-repeat;
+    position: relative;
+    // width: 100%;
+    background-size: 100%;
+    transition: background-size .5s;
+    transition: all 1s ease;
+    background-position: center center;
+    background-size: cover;
+    // &:after {
+    //     position: absolute;
+    //     content:"";
+    //     top:0;
+    //     left:0;
+    //     width:100%;
+    //     height:100%;
+    //     opacity:.6;
+    //     z-index: 10;
+    //     background-color: $dark-blue;
+    // }
+    .col-height {
+        min-height: 70vh;
+    }
+    .col-height-small {
+        min-height: 60vh;
+    }
+    .hero-text {
+        z-index: 12;
+    }
+    @include media-breakpoint-down(md) {
+        .col-height {
+            min-height: 90vh;
+        }
+        .col-height-small {
+            min-height: 90vh;
+        }
+    }
+    .text-container {
+        width: 500px;
+    }
+}

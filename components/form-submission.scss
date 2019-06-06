@@ -1,0 +1,90 @@
+form {
+    .form-wrapper {
+
+    }
+    .ajax-confirmation {
+        display: none;
+    }
+    .fadeIn {
+        animation-delay: 1s;
+        animation: fadeIn 1s forwards;
+        
+    }
+    .fadeOut {
+        animation: fadeIn 1s forwards;
+
+    }
+    .custom-control-input:invalid ~ .custom-control-label {
+        &:before {
+            background: white !important;
+        }
+        color: white !important;
+    }
+    label:invalid {
+        color: white !important;
+    }
+    .invalid-feedback {
+        color: $red;
+        animation: scaleIn .8s forwards;
+    }
+    .custom-control-input:valid ~ .custom-control-label {
+        &:before {
+            background-color: $orange !important;
+        }
+        color: white !important;
+    }
+    
+    .form-control.is-valid, .was-validated .custom-select:valid, .custom-select.is-valid {
+        border-color: $orange !important;
+    }
+    input:-internal-autofill-selected {
+        background-color: $dark-blue !important;
+
+    }
+    
+    .md-form label {
+        left: 0 !important;
+    }
+    .valid-feedback {
+        margin-top: 0 !important;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:focus {
+    border: 1px solid $dark-blue;
+    border-bottom: 2px solid $orange;
+    -webkit-text-fill-color: white;
+    box-shadow: 0 0 0px 1000px $dark-blue inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    }
+
+    @-webkit-keyframes autofill {
+        to {
+          color: #666;
+          background: transparent; } }
+      
+      @keyframes autofill {
+        to {
+          color: #666;
+          background: transparent; } }
+      
+      input:-webkit-autofill {
+        -webkit-animation-name: autofill;
+        animation-name: autofill;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; }
+}
+
+@keyframes scaleIn {
+    0%   {
+}
+    50% {
+    transform: translateX(20px);
+        }
+    100% { 
+     }
+}

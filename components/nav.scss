@@ -1,0 +1,334 @@
+$color-active: $dark-blue;
+$color-link: $dark-blue;
+$color-hover: $orange;
+$color-hamburger: #fff;
+.ab-fixed {
+  position: fixed !important;
+}
+.head-container {
+  height: 120px;
+  padding: 3rem 4rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  transition: all 500ms ease;
+  a {
+    line-height: 0 !important;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 2.5rem 1.5rem;
+    height: 50px;
+  }
+}
+.overflow-hidden {
+  // overflow-y: hidden;
+
+  @include media-breakpoint-down(sm) {
+    overflow: hidden;
+
+  }
+}
+
+// SCROLL BEHAVIOUR
+.scrolled {
+  .button_container.active .bottom,.button_container.active .top {
+    background: $dark-blue !important;
+  }
+  &~ .overlay {
+    background: $white !important;
+    li {
+      a {
+        color: $dark-blue !important;
+        &:hover {
+        color: $dark-blue !important;
+        }
+      }
+    }
+    .social {
+      svg {
+        fill: $dark-blue !important;
+      }
+      .tilmeld {
+        color: $dark-blue !important;
+      }
+    }
+  }
+  // background: #fff !important;
+  .logo {  
+    svg {
+      // fill: $dark-blue;
+    }
+  }
+  .button_container {
+    span {
+      // background: $dark-blue;
+    }
+  }
+  height: 70px;
+  padding: 1rem 4rem;
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+    height: 50px;
+  }
+}
+.bg-gone {
+  background: transparent !important;
+}
+
+.logo {
+  position: relative;
+  z-index: 102;
+
+  svg {
+    fill: rgb(255, 255, 255);
+    height: 35px;
+    width: 208.73px;
+      @include media-breakpoint-down(sm) {
+        width: 149.09px;
+        height: 25px;
+      }
+  }
+}
+.white-svg {
+  svg {
+    fill: $white;
+  }
+}
+.button_container {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 102;
+  transition: opacity .25s ease;
+  @include media-breakpoint-down(md) {
+    height: 30px !important;
+    width: 30px !important;
+  }
+  
+  &:hover {
+    opacity: .7;
+  }
+  
+  &.active {
+    // margin-right: 4.35rem !important;
+    .top {
+      transform: translateY(12px) translateX(0) rotate(45deg);
+      background: $color-active;
+      @include media-breakpoint-down(md) {
+        transform: translateY(10px) translateX(0) rotate(45deg);
+      }
+    }
+    .middle {
+      opacity: 0;
+      // border-radius: 0px;
+
+      background: $color-active;
+    }
+    
+    .bottom {
+      transform: translateY(-12px) translateX(0) rotate(-45deg);
+      background: $color-active;
+      @include media-breakpoint-down(md) {
+        transform: translateY(-10px) translateX(0) rotate(-45deg);
+      }
+      
+    }
+  }
+  
+  span {
+  background: $color-hamburger;
+  border: none;
+  border-radius: 5px;
+  height: 4px;
+  width: 100%;
+  transition:  all .35s ease;
+  cursor: pointer;
+  }
+}
+
+.overlay {
+  z-index: 100;
+  position: fixed;
+  background: $dark-blue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+      ~ svg {
+        fill: rgb(255, 255, 255);
+        height: 35px;
+    }
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    @include media-breakpoint-down(sm) {
+      overflow-y: scroll;
+    }
+
+
+    
+  .menu  li {
+      animation: fadeInTop .5s ease forwards;
+      animation-delay: .35s;
+      
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+      &:nth-of-type(5) {
+        animation-delay: .65s;
+      }
+
+    }
+    .social li {
+      animation: fade .5s ease forwards;
+      animation-delay: .35s;
+    }
+    .tilmeld {
+      animation: fade 1s ease-in forwards;
+      animation-delay: 0;
+      opacity: 1;
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+;
+    font-weight: 400;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      top: 40%;
+      left: 50%;
+      height: 0%;
+
+    }
+  }
+  .social {
+    ul {
+      justify-content: center;
+      display: -webkit-box;
+      width: 100%;
+      // height: 20%; 
+      flex-flow: wrap;
+    }
+    svg {
+      fill: $white !important;
+      width: 45px;
+      height: 45px;
+    }
+    .tilmeld {
+      color: $white;
+      &:hover {
+        color: $white !important;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    // height: 60%; 
+
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+      display: flex;
+      // height: 20%; 
+    }
+    li {
+      display: block;
+      padding: 15px 20px;
+      // height: 25%;
+      // height: calc(100% / 4);
+      // min-height: 50px;
+      position: relative;
+      opacity: 0;
+      .active-link:after {
+        width: 100%;
+      }
+      }
+      a {
+        display: block;
+        position: relative;
+        color: $white;
+        text-decoration: none;
+        overflow: hidden;
+        white-space: nowrap;
+
+        // &:hover:after,
+        //  &:focus:after,
+        //  &:active:after {
+        //    width: 100%;
+
+        //  }
+        &:hover {
+          color: $white !important;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-hover;
+          transition: .35s;
+        }
+      }
+    }
+    p {
+      opacity: 0;
+    }
+  }
+
+
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    bottom: 20%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .hide-scroll {
+    overflow: hidden;
+  }
+}
+
+.button_container.active .bottom,.button_container.active .top {
+  background: $white !important;
+}
+

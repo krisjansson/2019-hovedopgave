@@ -1,0 +1,36 @@
+.fibia-wrapper {
+
+    .fibia-logo {
+        max-width: 300px;
+        @include media-breakpoint-down(sm) {
+            max-width: 200px;
+        }
+    }
+
+    .fibia-hjalp {
+        .sub-text {
+            max-width: 750px;
+        }
+    }
+    .fibia-cards {
+        // min-width: 100%;
+        max-height: 650px;
+        object-fit: contain;
+        object-position: center;
+        @include media-breakpoint-down(sm) {
+            max-height: 350px;
+        }
+        
+    }
+    .img-testimonial {
+        max-width: 300px;
+        @include media-breakpoint-down(sm) {
+
+
+    }
+}
+}
+
+.bg-fibia {
+    background: url(../assets/img/fibia/Topgrafik-Fibia.jpg);
+}

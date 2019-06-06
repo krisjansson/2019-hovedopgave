@@ -1,0 +1,218 @@
+@font-face {
+	font-family: 'cocoGothic';
+	src: url('https://s3-eu-west-1.amazonaws.com/increaseassets/_SIMON/2019-04-04_nordlid/assets/fonts/Coco-Gothic-Heavy-TTF.ttf') format('truetype');
+	font-weight: 900;
+	font-style: heavy;
+}
+@font-face {
+    font-family: 'cocoGothic';
+    src: url('https://s3-eu-west-1.amazonaws.com/increaseassets/_SIMON/2019-04-04_nordlid/assets/fonts/Coco-Gothic-Bold-TTF.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+	font-family: 'cocoGothic';
+	src: url('https://s3-eu-west-1.amazonaws.com/increaseassets/_SIMON/2019-04-04_nordlid/assets/fonts/Coco-Gothic-Regular-TTF.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'cocoGothic';
+	src: url('https://s3-eu-west-1.amazonaws.com/increaseassets/_SIMON/2019-04-04_nordlid/assets/fonts/Coco-Gothic-Light-TTF.ttf') format('truetype');
+	font-weight: 100;
+	font-style: light;
+}
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.inherit {
+    color: inherit !important;
+}
+.inherit-weight {
+    font-weight: inherit !important;
+}
+.display-3 {
+    @include media-breakpoint-down(lg) {
+        font-size: 3.5rem;        
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 3rem;        
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 2.125rem;        
+    }
+}
+.display-4 {
+    // margin-left: -2px !important;
+    font-weight: normal !important;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2.125rem;
+        
+    }
+}
+.custom-fw-bold {
+    font-weight: 700 !important;
+}
+h1 {
+// font-size: 2.5rem;
+font-family: 'cocoGothic' ;
+font-weight: normal !important;
+// text-transform: uppercase;
+    @include media-breakpoint-only(lg) {
+        font-size: 1.8rem;
+    }
+}
+.custom-hero1 {
+    font-size: 2.5rem;
+    @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+    }
+}
+.custom-hero2 {
+    font-size: 2.5rem;
+    @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+    }
+}
+h2 {
+    // font-size: 2rem;
+    font-family: 'cocoGothic' !important;
+    font-weight: normal !important;
+    // text-transform: uppercase;
+    @include media-breakpoint-down(sm) {
+        // font-size: 1.5rem;
+    }
+}
+h3 {
+    font-family: 'cocoGothic' !important;
+    font-weight: normal !important;
+    // text-transform: uppercase;
+}
+h4 {
+    font-family: 'cocoGothic' !important;
+    font-weight: normal !important;
+    line-height: 2.4rem;
+    // text-transform: uppercase;
+}
+h5 {
+    font-family: 'cocoGothic' !important;
+    font-weight: normal !important;
+    // text-transform: uppercase;
+}
+.hero-text {
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 2.125rem;
+        }
+    }
+}
+p {
+    // font-family: 'cocoGothic' ;
+    // font-weight: 100 !important;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+.text-coco {
+    font-family: 'cocoGothic' !important;
+    font-weight: normal !important;
+}
+a {
+    font-size: 1.25rem;
+    text-decoration: none !important;
+}
+.tile-content {
+    a {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        // font-weight: 500;
+        color: inherit;
+    }
+}
+nav {
+    font-size: 34px;
+}
+.overlay-menu {
+    li {
+        a {
+            // text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 400 !important;
+            font-family: 'cocoGothic';
+        }
+    }
+    .tilmeld {
+        font-family: 'cocoGothic';
+        font-size: 1.5rem;
+    }
+}
+footer {
+    p, 
+    a {
+        color: $white;
+        font-size: 1.25rem;
+    }
+    .copyright {
+        font-size: 1rem;
+    }
+}
+#location-info {
+    a {
+        color: $black;
+        font-size: 1.25rem;
+    }
+}
+#karriere-container {
+    a {
+        font-size: 1.25rem;
+    }
+}
+.karriere-positions {
+    a {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}
+.position {
+    h2 {
+        font-weight: 300 !important;
+    }
+    h5 {
+        font-family: 'cocoGothic';
+        font-weight: 600 !important;
+    }
+}
+#flower-section {
+    .svg-menu__path__seleccion__text {
+        font-family: 'cocoGothic';
+    }
+}
+.small-lh {
+    line-height: 1.2;
+}
+
+.quad-section {
+    @include media-breakpoint-down(sm) {
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+input {
+    font-size: 1.125rem !important;
+    line-height: 1.5rem !important;
+}
+label {
+    font-size: 1rem !important;
+}
+
+::selection {
+    color: $white;
+    background: $orange;
+  }

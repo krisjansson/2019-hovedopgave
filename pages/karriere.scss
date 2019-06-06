@@ -1,0 +1,83 @@
+#karriere-container {
+
+    // .container-fluid {
+        .row {
+            min-height: 100vh;
+        }
+    // }
+    .karriere-content {
+        min-height: 100vh;
+            @include media-breakpoint-down(md) {
+                min-height: 100vh
+            }
+    }
+    .karriere-img {
+        position: relative;
+        background-image: url(../assets/img/karrier-brown.jpg);
+        background-position: center center;
+        background-size: cover;
+        // transform: scaleX(-1);
+        &:after {
+            // transition: all 3s ease;
+            position: absolute;
+            content:"";
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            opacity: 0.1;
+            background-color: #234a56;
+            
+        }
+        @include media-breakpoint-down(md) {
+            height: 50vh;
+        }
+    }
+    .sub-text {
+        max-width: 700px;
+    }
+}
+// .karriere-quad {
+//     .square {
+//         transition: all 2s ease;
+//         background-position: center center;
+//         background-repeat: no-repeat;
+    
+//         &:after {
+//             transition: all 1s ease;
+//             position: absolute;
+//             content:"";
+//             top:0;
+//             left:0;
+//             width:100%;
+//             height:100%;
+//             opacity:.6;
+//             z-index: 10;
+//             background-color: $dark-blue;
+//         }
+//         &:hover {
+//             &:after {
+//                 opacity: .25;
+//                 background-color: $orange;
+//             }
+//         }
+//     }
+// }
+.content-producer {
+    background-image: url(../assets/img/studio-republic-644339-unsplash.jpg);
+}
+.front-end-intern {
+    background-image: url(../assets/img/farzad-nazifi-71686-unsplash.jpg);
+}
+.senior-projektleder {
+    background-image: url(../assets/img/daniele-riggi-635135-unsplash.jpg);
+}
+.solution-arkitekt {
+    background-image: url(../assets/img/studio-republic-644339-unsplash.jpg);
+
+}
+
+.bg-karrier {
+    background-position: top !important;
+    background-image: url(https://www.nordlid.com/assets/img/karrier-bg2.jpg);
+}

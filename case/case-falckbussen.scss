@@ -1,0 +1,29 @@
+.falck-hero {
+    background: url(../assets/img/falck/Topgrafik-Foerstehjælpsbus.jpg);
+    background-color: $dark-blue;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    transition: background-size .5s;
+    transition: all 1s ease;
+    background-position: center center;
+    background-size: cover;
+    // &:after {
+    //     position: absolute;
+    //     content:"";
+    //     top:0;
+    //     left:0;
+    //     width:100%;
+    //     height:100%;
+    //     opacity:.6;
+    //     z-index: 10;
+    //     background-color: $dark-blue;
+    // }
+    .hero-text {
+        z-index: 11;
+    }
+}
+
+.bg-falck {
+    background: url(../assets/img/falck/Topgrafik-Foerstehjælpsbus.jpg);    
+}

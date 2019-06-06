@@ -1,0 +1,85 @@
+.overlay-menu a, .row a, .tile-container a {
+    position: relative;
+    // color: ;
+    text-decoration: none !important;
+    overflow: hidden;
+
+    &:hover {
+        color: inherit !important;
+    }
+    
+    &:hover:after,
+    &:active:after,
+    &:focus:after {
+        width: 100%;
+     }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+    //   transform: translateX(-50%);
+      height: 3px;
+      background: $color-hover;
+      transition: .35s;
+    }
+  }
+  .btn {
+    transition: all .5s !important;
+    // transform: translateY(0px);
+
+    &:hover {
+      // transition: all .5s;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important;
+      transform: translateX(10px);
+      transform: scale(1.1);
+      
+    }
+  }
+  .border-round {
+    border-radius: 35px;
+  }
+
+  .border-round-top {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .hover-right {
+    background-size: cover !important;
+    i {
+      transition: all 0.4s ease-out;
+    }
+    &:hover {
+      i {
+        transform: translateX(40px);
+      }
+    }
+
+  }
+  .hover-left {
+    background-size: cover !important;
+    i {
+      transition: all 0.4s ease-out;
+    }
+    &:hover {
+      i {
+        transform: translateX(-40px);
+      }
+    }
+
+  }
+
+.object-fit-cover {
+  object-fit: cover;
+  min-height: 100%;
+}
+
+.custom-lh {
+  line-height: 2.15rem;
+}
+
+.bg-custom-gray {
+  background: linear-gradient( #fff, #fbfbfb);
+}

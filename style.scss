@@ -1,0 +1,48 @@
+@import "bootstrap/bootstrap.scss";
+@import "variables";
+
+// COMPONENTS
+@import "components/font";
+@import "components/nav";
+@import "components/general";
+@import "components/footer";
+@import "components/swup";
+@import "components/donut-charts";
+@import "components/form-submission";
+@import "components/cookie";
+
+// SECTIONS
+@import "sections/half-section";
+@import "sections/quad-section";
+@import "sections/duo-section";
+@import "sections/full-title-section";
+@import "sections/full-title-section-case";
+@import "sections/half-title-section";
+@import "sections/half-section-content";
+@import "sections/half-section-clean";
+@import "sections/sort-section";
+@import "sections/location-info";
+@import "sections/tile-section";
+@import "sections/visual-bullets";
+@import "sections/kunder";
+
+// PAGES
+@import "pages/index-hero";
+@import "pages/karrier-crm";
+@import "pages/karriere";
+@import "pages/nyhedsbrev";
+@import "pages/om-os";
+@import "pages/position";
+@import "pages/service";
+@import "pages/cookie-policy";
+
+// CASE
+@import "case/case-borsen";
+@import "case/case-dsb";
+@import "case/case-eb";
+@import "case/case-fibia";
+@import "case/case-lotto";
+@import "case/case-togtesten";
+@import "case/case-danske-spil";
+@import "case/case-falckbussen";
+@import "case/cases";

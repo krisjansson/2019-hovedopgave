@@ -1,0 +1,159 @@
+#not-the-fan {
+  display: none;
+  @include media-breakpoint-down(lg) {
+    display: block;
+
+  }
+}
+#flower-section-ie {
+    display: none;
+}
+#flower-section {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+  
+    }
+    // min-height: 700px;
+
+    svg {
+      min-height:700px;
+
+        // height: 60%;
+        width:  80%;
+        .st0{fill:#81D0D3;}
+        .st1{fill:#6BB2B5;}
+        .st2{fill:#548093;}
+        .st3{fill:#346B7A;}
+        .st4{fill:#2B4C61;}  
+    }
+    // svg {
+    //   height: 60%;
+    //   width: 60%;
+    //   .st0{fill: $orange;}
+    //   .st1{fill: $teal;}
+    //   .st2{fill: $light-blue;}
+    //   .st3{fill: $blue;}
+    //   .st4{fill: $dark-blue;}  
+            
+    // }
+}
+  #scale-icon {
+    transform-origin: 710px 190px;
+    transform: scale(0.2);
+    fill: $light-blue;    
+  }
+  #scale-icon-hand {
+    transform-origin: 670px 175px;
+    transform: scale(0.2);
+    fill: #2B4C61;    
+  }
+  #scale-icon-strategi {
+    width: 10px;
+    height: 10px;
+    transform-origin: 710px 175px;
+    transform: scale(0.2);
+    fill: $light-blue;    
+  }
+  #scale-icon-rocket {
+    transform-origin: 680px 170px;
+    transform: scale(0.2);
+    fill: $light-blue;    
+  }
+  #scale-icon-effekt {
+    transform-origin: 690px 190px;
+    transform: scale(0.2);
+    fill: $light-blue;    
+  }
+  #scale-icon-people {
+    transform-origin: 678px 190px;
+    transform: scale(0.2);
+    fill: $light-blue;    
+  }
+  .svg-circle-bg {
+    transform-origin: 2190px 355px;
+    transform: scale(0.82);
+    // opacity: .8;
+    fill: #2B4C61;  
+      
+  }
+  .svg-menu__path__seleccion, .svg-menu__path__seleccion *
+  {
+    
+    transition: all .5s ease-out;
+  }
+  
+  .svg-menu__path__seleccion__text *{  
+    animation: fade 1s ease forwards;
+
+    font-weight: bold;
+  }
+  
+  .svg-menu__path__seleccion {
+    transform-origin: 50% 50%;
+    
+  }
+  .svg-menu__path__seleccion__textbody {
+
+    display: none;
+    
+  }
+  .svg-menu__path__seleccion:hover {
+    transform: scale(1.1);
+
+  } 
+  .svg-menu__path__seleccion.active {
+    transform: scale(1.1);
+
+
+    .st0, .st1, .st2 ,.st3, .st4 {
+      fill:#2B4C61 !important;
+    }
+
+    .svg-menu__path__seleccion__textbody {
+      background-color: #2B4C61;
+      display: block;
+      
+      text {
+        fill: white;
+    }
+    }
+    
+  }
+  
+  .svg-menu__path__seleccion:hover .svg-menu__path__seleccion__background *, .svg-menu__path__seleccion.active .svg-menu__path__seleccion__background *
+  {
+    fill: #14b1bb;  
+  }
+.svg-menu__path__seleccion__text {  
+
+  text {
+      fill: white;
+  }
+}
+.service-bg {
+  background: url(https://www.nordlid.com/assets/img/service-bg2.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  transition: background-size .5s;
+  transition: all 1s ease;
+  background-position: center center; 
+}
+.bg-specialister {
+  background: url(../assets/img/IMG_20190405_095723.jpg);
+  // background-position-x: -250px !important;
+}
+.bg-organistation {
+  background: url(../assets/img/Medarbejderhaandbog_2019_v2-27.png);
+
+}
+
+
+.small-service-container {
+  max-width: 680px;
+}
+
+.partner-icon {
+  width: 250px;
+}

@@ -1,0 +1,94 @@
+.dsb-bg {
+    background: url(../assets/img/dsb/dsb-header.jpg);
+
+}
+.lotto-bg {
+    background: url(../assets/img/lotto/test_2650x1500px_v01.jpg)
+}
+
+.case-heading {
+    color: $light-blue;
+}
+
+.case-logo-click {
+    position: absolute;
+    height: 120px;
+    width: auto;
+    @include media-breakpoint-down(sm) {
+        max-height: 100px;
+    }
+}
+
+.logo-size {
+    height: 120px;
+    width: auto;
+    @include media-breakpoint-down(sm) {
+        max-height: 100px;
+    }
+}
+.bg-cases {
+    background: url(https://www.nordlid.com/assets/img/cases/Cases-Topgrafik.jpg);  
+}
+
+.case-logo-click, .case-text {
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    z-index: 11;
+    transform: translate(-50%, -50%);
+}
+.square {
+    @include media-breakpoint-up(md) {
+        &:hover {
+            .case-text {
+                margin-top: 0px;
+                opacity: 1;
+            }
+            .img-gone{
+                opacity: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+    .case-text {
+        margin-top: 20px;
+        transition: all 0.2s ease-out !important;
+        opacity: 0;
+    }
+    .img-gone {
+        margin-top: 0px;
+        transition: all 0.2s ease-out !important;
+        opacity: 1;
+    }
+}
+.full-title-section {
+    @include media-breakpoint-up(md) {
+        &:hover {
+            .case-text {
+                margin-top: 0px;
+                opacity: 1;
+            }
+            .img-gone{
+                opacity: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+    .case-text {
+        margin-top: 20px;
+        transition: all 0.2s ease-out !important;
+        opacity: 0;
+    }
+    .img-gone {
+        width: 250px;
+        fill: white !important;
+        margin-top: 0px;
+        transition: all 0.2s ease-out !important;
+        opacity: 1;
+        @include media-breakpoint-up(md) {
+            width: 500px;
+        }
+    }
+}
+

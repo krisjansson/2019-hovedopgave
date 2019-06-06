@@ -1,0 +1,14 @@
+.bg-borsen {
+    background: url(../assets/img/borsen/borsen-bg.jpg);
+    background-position: top !important;
+}
+.bg-incase-borsen {
+    background: url(../assets/img/borsen/borsen-in-case-bg.jpg);
+    background-position: top !important;
+}
+.borsen-logo {
+    fill: white;
+    @include media-breakpoint-down(sm) {
+        max-width: 200px;
+    }
+}

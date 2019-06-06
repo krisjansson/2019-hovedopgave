@@ -1,0 +1,67 @@
+.dsb-hero {
+    background: url(../assets/img/dsb/dsb-header.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+    transition: background-size .5s;
+    transition: all 1s ease;
+    background-position: center center;
+    background-size: cover;
+    // &:after {
+    //     position: absolute;
+    //     content:"";
+    //     top:0;
+    //     left:0;
+    //     width:100%;
+    //     height:100%;
+    //     opacity:.6;
+    //     z-index: 10;
+    //     background-color: $dark-blue;
+    // }
+    .case-logo {
+        z-index: 11;
+    }
+}
+.dsb-bg {
+    background: url(../assets/img/dsb/dsb-header.jpg);
+//     transition: all 2s ease;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+
+//     &:after {
+//         transition: all 1s ease;
+//         position: absolute;
+//         content:"";
+//         top:0;
+//         left:0;
+//         width:100%;
+//         height:100%;
+//         opacity:.6;
+//         z-index: 10;
+//         background-color: $dark-blue;
+//     }
+//     &:hover {
+//         &:after {
+//             opacity: .25;
+//             background-color: $orange;
+//         }
+//     }
+}
+
+.case-logo {
+    height: 200px;
+    width: auto;
+    @include media-breakpoint-down(sm) {
+        max-height: 100px;
+    }
+}
+
+.dsb-wrapper {
+    .sub-text {
+        max-width: 750px;
+    }
+}
+.result-icon-height {
+    height: 196px;
+}

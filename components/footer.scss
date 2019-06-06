@@ -1,0 +1,38 @@
+footer {
+    position: relative;
+    // height: 100%;
+    display:block;
+    .footer-logo {
+        svg {
+            height: 20px;
+            width: 119.27px;
+        }
+    }
+    .social-icon {
+        svg {
+            height: 35px;
+            width: 35px;
+            fill: white;
+        }      
+    
+    }
+    .aws-icon {
+        height: 30px;
+    }
+    .salesforce-icon {
+        height: 48px;
+    }
+    .oracle-icon {
+        height: 21px;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .footer-social-icon {
+            height: 25px;
+        }
+        .salesforce-icon {
+            height: 35px;
+        }
+    }
+    
+}
